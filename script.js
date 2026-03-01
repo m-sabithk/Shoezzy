@@ -3,30 +3,30 @@ let users = JSON.parse(localStorage.getItem('users')) || [];
 let orders = JSON.parse(localStorage.getItem('orders')) || [];
 let wishlist = JSON.parse(localStorage.getItem('wishlist')) || [];
 let products = JSON.parse(localStorage.getItem('products')) || [
-    { id: 1, name: "Classic White Sneakers", price: 89.99, image: "https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=500&h=500", desc: "Comfortable everyday sneakers" },
-    { id: 2, name: "Black Running Shoes", price: 129.99, image: "https://images.unsplash.com/photo-1542219550-a0db92d57340?w=500&h=500", desc: "Professional running shoe" },
-    { id: 3, name: "Leather Oxford Shoes", price: 159.99, image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=500&h=500", desc: "Formal dress shoes" },
-    { id: 4, name: "Casual Canvas Slip-ons", price: 69.99, image: "https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?w=500&h=500", desc: "Lightweight casual shoes" },
-    { id: 5, name: "Basketball Shoes", price: 149.99, image: "https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=500&h=500", desc: "Sports performance shoes" },
-    { id: 6, name: "Summer Sandals", price: 49.99, image: "https://images.unsplash.com/photo-1572635196237-14b3f281503f?w=500&h=500", desc: "Comfortable summer footwear" },
-    { id: 7, name: "Formal Dress Shoes", price: 189.99, image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=500&h=500", desc: "Premium formal shoes" },
-    { id: 8, name: "Hiking Boots", price: 179.99, image: "https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=500&h=500", desc: "Durable hiking footwear" },
-    { id: 9, name: "Pink Sneakers", price: 84.99, image: "https://images.unsplash.com/photo-1520708155298-84ae0b46a55d?w=500&h=500", desc: "Trendy pink shoes" },
-    { id: 10, name: "Women's Running Shoes", price: 124.99, image: "https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=500&h=500", desc: "Women's sports shoes" },
-    { id: 11, name: "Red High Heels", price: 139.99, image: "https://images.unsplash.com/photo-1543163521-1bf539c55dd2?w=500&h=500", desc: "Elegant high heels" },
-    { id: 12, name: "Women's Boots", price: 169.99, image: "https://images.unsplash.com/photo-1548099281-9f2d9f3e29d0?w=500&h=500", desc: "Premium leather boots" },
-    { id: 13, name: "Flats", price: 74.99, image: "https://images.unsplash.com/photo-1576267623382-26f33f80bedb?w=500&h=500", desc: "Comfortable flat shoes" },
-    { id: 14, name: "Women's Gym Shoes", price: 114.99, image: "https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=500&h=500", desc: "Training footwear" },
-    { id: 15, name: "Black Strappy Heels", price: 144.99, image: "https://images.unsplash.com/photo-1543163521-1bf539c55dd2?w=500&h=500", desc: "Formal heels" },
-    { id: 16, name: "Women's Loafers", price: 94.99, image: "https://images.unsplash.com/photo-1578500494198-246f612d03b3?w=500&h=500", desc: "Professional loafers" },
-    { id: 17, name: "Kids' Colorful Sneakers", price: 54.99, image: "https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=500&h=500", desc: "Fun kids shoes" },
-    { id: 18, name: "Kids' School Shoes", price: 64.99, image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=500&h=500", desc: "Durable school shoes" },
-    { id: 19, name: "Kids' Sports Shoes", price: 69.99, image: "https://images.unsplash.com/photo-1542219550-a0db92d57340?w=500&h=500", desc: "Kids sports footwear" },
-    { id: 20, name: "Kids' Slip-ons", price: 49.99, image: "https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?w=500&h=500", desc: "Easy kids shoes" },
-    { id: 21, name: "Premium Leather Oxfords", price: 249.99, image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=500&h=500", desc: "Luxury formal shoes" },
-    { id: 22, name: "Designer Sneakers", price: 199.99, image: "https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=500&h=500", desc: "Limited edition sneakers" },
-    { id: 23, name: "Winter Snow Boots", price: 189.99, image: "https://images.unsplash.com/photo-1548099281-9f2d9f3e29d0?w=500&h=500", desc: "Insulated winter boots" },
-    { id: 24, name: "Waterproof Hiking Shoes", price: 169.99, image: "https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=500&h=500", desc: "All-terrain hiking shoes" }
+    { id: 1, name: "Classic White Sneakers", price: 89.99, image: "https://images.unsplash.com/photo-1528701800486-39a45fdbbd91?w=500&h=500", desc: "Comfortable everyday sneakers" },
+    { id: 2, name: "Black Running Shoes", price: 129.99, image: "https://source.unsplash.com/500x500/?black-running-shoes", desc: "Professional running shoe" },
+    { id: 3, name: "Leather Oxford Shoes", price: 159.99, image: "https://source.unsplash.com/500x500/?leather-oxford-shoes", desc: "Formal dress shoes" },
+    { id: 4, name: "Casual Canvas Slip-ons", price: 69.99, image: "https://source.unsplash.com/500x500/?canvas-slip-ons", desc: "Lightweight casual shoes" },
+    { id: 5, name: "Basketball Shoes", price: 149.99, image: "https://source.unsplash.com/500x500/?basketball-shoes", desc: "Sports performance shoes" },
+    { id: 6, name: "Summer Sandals", price: 49.99, image: "https://source.unsplash.com/500x500/?summer-sandals", desc: "Comfortable summer footwear" },
+    { id: 7, name: "Formal Dress Shoes", price: 189.99, image: "https://source.unsplash.com/500x500/?formal-dress-shoes", desc: "Premium formal shoes" },
+    { id: 8, name: "Hiking Boots", price: 179.99, image: "https://source.unsplash.com/500x500/?hiking-boots", desc: "Durable hiking footwear" },
+    { id: 9, name: "Pink Sneakers", price: 84.99, image: "https://source.unsplash.com/500x500/?pink-sneakers", desc: "Trendy pink shoes" },
+    { id: 10, name: "Women's Running Shoes", price: 124.99, image: "https://source.unsplash.com/500x500/?womens-running-shoes", desc: "Women's sports shoes" },
+    { id: 11, name: "Red High Heels", price: 139.99, image: "https://source.unsplash.com/500x500/?red-high-heels", desc: "Elegant high heels" },
+    { id: 12, name: "Women's Boots", price: 169.99, image: "https://source.unsplash.com/500x500/?womens-boots", desc: "Premium leather boots" },
+    { id: 13, name: "Flats", price: 74.99, image: "https://source.unsplash.com/500x500/?flats-shoes", desc: "Comfortable flat shoes" },
+    { id: 14, name: "Women's Gym Shoes", price: 114.99, image: "https://source.unsplash.com/500x500/?womens-gym-shoes", desc: "Training footwear" },
+    { id: 15, name: "Black Strappy Heels", price: 144.99, image: "https://source.unsplash.com/500x500/?black-strappy-heels", desc: "Formal heels" },
+    { id: 16, name: "Women's Loafers", price: 94.99, image: "https://source.unsplash.com/500x500/?womens-loafers", desc: "Professional loafers" },
+    { id: 17, name: "Kids' Colorful Sneakers", price: 54.99, image: "https://source.unsplash.com/500x500/?kids-colorful-sneakers", desc: "Fun kids shoes" },
+    { id: 18, name: "Kids' School Shoes", price: 64.99, image: "https://source.unsplash.com/500x500/?kids-school-shoes", desc: "Durable school shoes" },
+    { id: 19, name: "Kids' Sports Shoes", price: 69.99, image: "https://source.unsplash.com/500x500/?kids-sports-shoes", desc: "Kids sports footwear" },
+    { id: 20, name: "Kids' Slip-ons", price: 49.99, image: "https://source.unsplash.com/500x500/?kids-slip-ons", desc: "Easy kids shoes" },
+    { id: 21, name: "Premium Leather Oxfords", price: 249.99, image: "https://source.unsplash.com/500x500/?premium-leather-oxfords", desc: "Luxury formal shoes" },
+    { id: 22, name: "Designer Sneakers", price: 199.99, image: "https://source.unsplash.com/500x500/?designer-sneakers", desc: "Limited edition sneakers" },
+    { id: 23, name: "Winter Snow Boots", price: 189.99, image: "https://source.unsplash.com/500x500/?winter-snow-boots", desc: "Insulated winter boots" },
+    { id: 24, name: "Waterproof Hiking Shoes", price: 169.99, image: "https://source.unsplash.com/500x500/?waterproof-hiking-shoes", desc: "All-terrain hiking shoes" }
 ];
 
 let currentUser = null;
@@ -71,8 +71,16 @@ function handleSignup(e) {
         return;
     }
 
+    // Validate email format (proper email structure)
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailRegex.test(email)) {
+        alert('❌ Please enter a valid email address!');
+        return;
+    }
+
+    // Check if email already exists
     if (users.some(u => u.email === email)) {
-        alert('❌ Email already registered!');
+        alert('❌ This email is already registered! Please use a different email.');
         return;
     }
 
@@ -91,7 +99,17 @@ function handleSignup(e) {
         createdAt: new Date().toLocaleDateString()
     });
 
+    // persist user list
     localStorage.setItem('users', JSON.stringify(users));
+
+    // if admin is currently viewing the dashboard, refresh counts and customer list
+    try {
+        loadAdminDashboard();
+        loadAdminCustomers();
+    } catch (err) {
+        // ignore if functions or elements aren't available (e.g. admin not logged in)
+    }
+
     alert('✅ Account created! Please login now.');
     document.querySelector('#signupSection form').reset();
     showLogin();
@@ -102,6 +120,13 @@ function handleLogin(e) {
     
     const email = document.getElementById('loginEmail').value.trim();
     const password = document.getElementById('loginPassword').value;
+
+    // Validate email format
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailRegex.test(email)) {
+        alert('❌ Please enter a valid email address!');
+        return;
+    }
 
     const user = users.find(u => u.email === email && u.password === password);
     
@@ -121,6 +146,13 @@ function handleAdminLogin(e) {
     
     const email = document.getElementById('adminEmail').value.trim();
     const password = document.getElementById('adminPassword').value;
+
+    // Validate email format
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailRegex.test(email)) {
+        alert('❌ Please enter a valid email address!');
+        return;
+    }
 
     if (email !== adminCreds.email || password !== adminCreds.password) {
         alert('❌ Invalid admin credentials!');
