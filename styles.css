@@ -5,11 +5,11 @@
 }
 
 :root {
-    --primary: #0066cc;
-    --primary-dark: #0052a3;
+    --primary: #20106e;
+    --primary-dark: #b5d5f4;
     --primary-light: #e6f2ff;
-    --text: #333;
-    --text-light: #666;
+    --text: #4c81ac;
+    --text-light: #fdfcfc;
     --border: #ddd;
     --bg: #f9f9f9;
     --white: #fff;
@@ -1760,4 +1760,5 @@ body {
 .cancel-btn:hover {
     border-color: var(--primary);
     color: var(--primary);
+
 }
